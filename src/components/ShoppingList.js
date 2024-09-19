@@ -24,11 +24,11 @@ function ShoppingList({ items }) {
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
         </select> */}
-        <Filter onCategoryChange={ handleCategoryChange }/>
+        <Filter onCategoryChange={handleCategoryChange}/>
       </div>
       <ul className="Items">
         {itemsToDisplay.map((item) => (
-          <Item key={ item.id } name={ item.name } category={ item.category } />
+          <Item key={item.id} name={item.name} category={item.category} />
         ))}
       </ul>
     </div>
